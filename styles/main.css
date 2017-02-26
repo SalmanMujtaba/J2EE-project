@@ -1,0 +1,574 @@
+
+/*Common CSS***************************/
+
+body {
+    min-height: 100%;
+    margin:0 auto;
+
+    clear: both;
+}
+
+table, th, td{
+
+    text-align: left;
+    border:1px solid white;
+    border-collapse: collapse;
+    
+}
+tr:nth-child(even) {
+    background-color: #AED6F1;
+    height:25px;
+}
+tr:nth-child(odd) {
+    height:25px;
+    background-color: #D6EAF8;
+}
+th{
+    background-color: #2874A6;;
+    color:white;
+    border-color:white;
+    padding-left: 0.5em;
+}
+
+button{
+
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+td{
+    text-align: center;
+
+}
+
+td img{
+    width : 50px;
+    height:50px;
+}
+
+/*giving style to buttons in table*/
+tr button{
+    width:85%;
+    
+}
+
+#back_to_page{
+    float: left;
+    margin-left: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+h1 {
+    color: navy;
+}
+label {
+    display: inline-block;
+    text-align:right;
+    width:115px;
+}
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    margin-bottom: 10px;
+
+    /* To give the same size to all text field */
+    width: 370px;
+    height:2em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #3385FF;
+}
+
+/*to give general style to drop down list*/
+select{
+    margin-bottom: 10px;   
+    border: 1px solid #3385FF;
+}
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on every browsers */
+    resize: vertical;
+}
+#submit_button {
+    /* To position the buttons to the same position of the text fields */
+    /* same size as the label elements */
+    margin-left: 120px;
+    background-color: #475D9F;
+    color: white;
+    border-color: #475D9F;
+    border-radius: 0.5em;
+}
+
+nav{
+    background-color: #F5F5DC;
+    margin:0;
+    overflow: hidden;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+
+}
+
+.count{
+    color:blue;
+}
+
+#page_name{
+    margin-top: 1px;
+    padding: .5em;
+    background-color: #D3D3CF;
+    width:200px;
+}
+
+/* header.jsp ********************************/
+
+nav#header_menu ul li a {
+
+    color: black;
+
+    display: block;
+    line-height: 2em;
+
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+
+
+
+nav#menu {
+    color: black;
+    background-color: #AED6F1;
+    font-weight: bold;
+    float:left;
+    display: block;
+    line-height: 3em;
+    margin: 20px ;
+    margin-bottom: 100px;
+    border : 1px solid blue;
+    
+    text-decoration: none;
+    width:160px;
+}
+
+
+
+nav#header_menu ul li{
+    display:inline-block;
+    list-style-type: none;
+}
+
+
+nav .left{
+    float:left;
+    padding: 1em 1em;
+    font-weight: bold;
+    font-size:20px;
+    color: #009933;
+
+}
+
+nav .right{
+    float:right;
+    margin-right:2em;
+
+}
+
+
+
+/* footer.jsp *******************************/
+
+.copyright{
+    position:fixed;
+    bottom:0;
+
+    margin-top: 100px;;
+    width: 100%;
+
+    padding: 20px 20px;
+    background: #FF4D4D;
+    text-align:center;
+    color:white;
+}
+
+/* about.jsp ********************************/
+
+#how{
+    text-align: left;
+    margin: 0 auto;
+
+    margin-bottom: 100px;
+
+    color:black;
+    margin-top: 100px;
+    width:70%;
+    padding: 20px ; 
+    border : 1px black solid;
+}
+
+/* aboutl.jsp *********************************/
+
+nav#menu ul li{
+    display:block;
+    list-style-type: none;
+    border-bottom: 1px solid blue;
+    text-align: left;
+    padding-left: 1em;
+}
+
+nav#menu ul li a {
+
+    color: black;
+    text-align: left;
+
+    display: block;
+    text-decoration: none;
+}
+
+/*to arrange the links in menu properly*/
+nav#menu a {
+
+    margin-right: 0.5em;   
+}
+
+.main{
+
+    margin: 20px 40px 100px 20px;
+    text-align:left;
+    color:black;
+    float:left;
+    width:70%;
+    padding: 20px ; 
+    border : 1px black solid;
+}
+
+/* confirmc.jsp *********************************/
+
+#confirmc{
+    margin:0 auto;
+    text-align: center;
+    width: 500px;
+    padding: 1em;
+    margin-top: 100px;
+}
+/* contact.jsp *********************************/
+
+#contact_form{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width : 500px;
+    padding : 1em;
+
+}
+/* home.jsp *********************************/
+
+#home_page{
+    margin:0 auto;
+    margin-bottom: 100px;
+    width:1000px;
+    margin-top: 40px;
+}
+
+/* login.jsp *********************************/
+
+#login_form{
+    margin: 0 auto;
+    width : 500px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding : 1em;
+}
+
+#sign_up_link{
+    text-decoration: none;
+    font-weight: bold;
+    color:#475D9F;
+    padding-left: 130px;
+
+}
+
+#signup_button {
+    /* To position the buttons to the same position of the text fields */
+    /* same size as the label elements */
+    float: left;
+    margin-left: 233px;
+    width:150px;
+    margin-top: 30px;
+    background-color: #3090C7;
+    color: white;
+    margin-bottom: 50px;
+    border-color: #475D9F;
+    border-radius: 0.5em;
+}
+
+#login_button {
+    /* To position the buttons to the same position of the text fields */
+    /* same size as the label elements */
+    width:70px;
+    margin-top: 30px;
+    background-color: #3090C7;
+    color: white;
+    margin-bottom: 50px;
+    border-color: #475D9F;
+    border-radius: 0.5em;
+}
+
+/*admin button at login screen*/
+#admin_login {
+   /* To position the buttons to the same position of the text fields */
+    /* same size as the label elements */
+    margin-left: 10px;
+    width:70px;
+    margin-top: 30px;
+    background-color: #3090C7;
+    color: white;
+    margin-bottom: 50px;
+    border-color: #475D9F;
+    border-radius: 0.5em;
+}
+/* newstudy.jsp *********************************/
+
+#newstudy_form{
+    margin: 0 auto;
+    width : 500px;
+    margin-bottom: 100px;
+    padding : 1em;
+
+}
+
+/* participate.jsp *********************************/
+
+.participate{
+    margin-top: 10px;
+    margin-left: 10px;
+    width:70%;
+    float : left;
+    margin-bottom: 100px;
+}
+
+#studies_table{
+    width:100%;
+}
+
+#studies_table th{
+    text-align: center;
+}
+
+.participate h3{
+    margin-bottom: 60px;
+
+}
+
+.participate_button {
+    /* To position the buttons to the same position of the text fields */
+    /* same size as the label elements */
+    width:100px;
+
+    border-radius: 0.5em;
+}
+
+/* question.jsp *********************************/
+
+
+.question_section{
+    width:70%;
+    margin-bottom: 200px;
+    float:left;
+    margin:30px;
+    
+    margin-top: 10px;
+}
+.question_section h3{
+    margin-bottom: 30px;
+}
+
+#question_page_image{
+    width: 200px;
+    height : 250px;
+    float:left;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+#question_submit{
+    margin:0 auto;
+    width:100px;
+    float: right;
+}
+#question_submit_div{
+    padding: 1em;
+    float: left;
+    margin-right: 0px;
+    width: 400px;
+}
+
+#question_submit_div input{
+    width: 100px;
+}
+#question_select{
+    float:left
+}
+
+#question_ans_select{
+
+    margin-left: 50px;
+
+}
+
+
+/* recommend.jsp *********************************/
+
+#recommend_form{
+    margin: 0 auto;
+    width :500px;
+    padding : 1em;
+
+}
+
+#recommend_page_note{
+    font-weight: bold;
+    font-style: italic;
+    margin: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/* signup.jsp *********************************/
+
+#signup_form{
+    margin: 0 auto;
+    width : 700px;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 100px;
+    padding : 1em;
+
+}
+#signup_form label{
+    display: inline-block;
+    text-align:right;
+    width:135px;
+}
+
+/* studies.jsp *********************************/
+
+
+#studies{
+    padding: .5em;
+    margin-right: 1em;
+    background-color: #D3D3CF;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+#add_new_study a{
+    margin-left: 20px;
+    text-decoration: none;
+    color:black;
+}
+
+#my_studies_table{
+    float:left;
+    margin: 20px 20px 20px 100px;
+    width:80%
+}
+/*style for tablein studies table*/
+#my_studies_table th{
+    background-color: black; 
+}
+
+#my_studies_table tr:nth-child(even) {
+    background-color: #CACFD2;
+    height:25px;
+}
+#my_studies_table tr:nth-child(odd) {
+    height:25px;
+    background-color: #F2F3F4;
+}
+
+#studies_section{
+    margin-bottom: 100px;
+}
+
+
+#edit_study_image{
+    width: 120px;
+    height : 50px;
+
+    vertical-align: middle;
+    border : 2px solid black;
+    margin: 0px 10px 0px 10px;
+}
+
+/*to style the text boxes in duv tag in new studies page*/
+#answer_section input{
+    margin-left: 0.2em;
+}
+
+
+/*styling for reports.jsp*/
+
+.reports{
+    width:40%;
+    margin:30px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#reports_table{
+    width:100%;
+}
+
+#reports_table td, th{
+    width:15px;
+    max-width:15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding-left: 5px;
+}
+
+
+.reports_button {
+    /* To position the buttons to the same position of the text fields */
+    /* same size as the label elements */
+    height: auto;
+    margin-bottom: 2px;
+    width:100px;
+    background-color: #2874A6;
+    color: white;
+    border:1px solid black;
+    border-radius: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
